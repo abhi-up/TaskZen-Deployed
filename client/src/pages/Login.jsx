@@ -124,7 +124,7 @@ const Login = () => {
                                 Welcome back!
                             </p>
                             <p className="text-center text-base text-gray-700 ">
-                                Keep all your credential safge.
+                                Keep all your credentials safe.
                             </p>
                         </div>
 
