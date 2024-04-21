@@ -3,7 +3,7 @@ import cors from "cors"
 import dotenv from "dotenv"
 import express from "express"
 import morgan from "morgan"
-import connectDB from "./utils/index.js"
+import { dbConnection } from "./utils/index.js"
 import path from "path"
 import { fileURLToPath } from "url"
 import { errorHandler, routeNotFound } from "./middlewares/errorMiddleware.js"
@@ -16,7 +16,7 @@ console.log(__dirname)
 
 dotenv.config()
 
-connectDB()
+dbConnection()
 
 const PORT = process.env.PORT || 8800
 
